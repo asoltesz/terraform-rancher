@@ -8,6 +8,8 @@ resource "rancher2_cluster" "cluster" {
 
   rke_config {
 
+    kubernetes_version = var.kubernetes_version
+
     network {
       plugin = "canal"
       canal_network_provider {

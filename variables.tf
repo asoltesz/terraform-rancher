@@ -31,3 +31,12 @@ variable "enable_cluster_alerting" {
 variable "enable_cluster_monitoring" {
   default = true
 }
+
+#
+# The Kubernetes version you want to install on the nodes.
+#
+# It must be one of the supported versions of your Rancher/RKE server
+#
+variable "kubernetes_version" {
+  default = "v1.15.11-rancher1-2"
+}

@@ -5,3 +5,7 @@ output "kube_config" {
 output "node_command" {
   value = rancher2_cluster.cluster.cluster_registration_token.0.node_command
 }
+
+output "cluster_id" {
+  value = rancher2_cluster.cluster.cluster_registration_token.0.cluster_id
+}

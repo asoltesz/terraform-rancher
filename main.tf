@@ -42,6 +42,9 @@ resource "rancher2_cluster" "cluster" {
         extra_args = {
           cloud-provider = "external"
         }
+        extra_binds = [
+          "/var/openebs/local:/var/openebs/local"
+        ]
       }
     }
   }
